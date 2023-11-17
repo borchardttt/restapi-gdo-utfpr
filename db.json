@@ -1,0 +1,29 @@
+{
+  "users":[
+    {
+      "id": 1,
+      "nome": "Gabriel Borchardt",
+      "email": "ogborchctt@gmail.com"
+    },
+    {
+      "id": 2,
+      "nome": "Alef Juan",
+      "email": "alefjuan88@gmail.com"
+    }
+  ],
+
+  "entidades":[
+    {
+      "id": 1,
+      "nome": "Financeiro"
+    },
+    {
+      "id": 2,
+      "nome": "Tecnologia da Informação"
+    },
+    {
+      "id": 3,
+      "nome": "Recursos Humanos"
+    }
+  ]
+}
