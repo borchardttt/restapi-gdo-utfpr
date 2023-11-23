@@ -1,14 +1,21 @@
 const jsonServer = require('json-server');
 const express = require('express');
-const cors = require('cors');
+const cors = require('cors'); // Importe o pacote CORS
 
 const server = jsonServer.create();
+const corsOptions = {
+  origin: 'http://localhost:4200',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
+
+server.use(cors(corsOptions));
+
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
 const port = process.env.PORT || 8080;
-
-server.use(cors());
 
 server.use(middlewares);
 server.use(router);
