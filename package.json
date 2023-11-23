@@ -1,23 +1,15 @@
 {
-  "name": "restapienglishforkids",
+  "name": "restapigdoutfpr",
   "version": "1.0.0",
-  "description": "rest api english for kids",
+  "description": "rest api for gdoutfpr",
   "main": "server.js",
   "scripts": {
     "start": "node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dfilitto/restapienglishforkids.git"
-  },
   "keywords": [],
   "author": "Danilo Filitto",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dfilitto/restapienglishforkids/issues"
-  },
-  "homepage": "https://github.com/dfilitto/restapienglishforkids#readme",
   "dependencies": {
     "json-server": "^0.16.3"
   }
