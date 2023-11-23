@@ -3,27 +3,43 @@
     {
       "id": 1,
       "nome": "Gabriel Borchardt",
-      "email": "ogborchctt@gmail.com"
+      "email": "ogborchctt@gmail.com",
+      "senha": "gdoutfprGB"
     },
     {
       "id": 2,
       "nome": "Alef Juan",
-      "email": "alefjuan88@gmail.com"
+      "email": "alefjuan88@gmail.com",
+      "senha": "gdoutfprAJ"
     }
   ],
 
   "entidades":[
     {
       "id": 1,
-      "nome": "Financeiro"
+      "nome": "Financeiro",
+      "orcamento": 0,
+      "orcamento-movimentado": 0
     },
     {
       "id": 2,
-      "nome": "Tecnologia da Informação"
+      "nome": "Tecnologia da Informação",
+      "orcamento": 0,
+      "orcamento-movimentado": 0
     },
     {
       "id": 3,
-      "nome": "Recursos Humanos"
+      "nome": "Recursos Humanos",
+      "orcamento": 0,
+      "orcamento-movimentado": 0
+    }
+  ],
+  "movimentacoes":[
+    {
+      "autor": "",
+      "id": 0,
+      "entidade": "",
+      "justificativa": ""
     }
   ]
 }
