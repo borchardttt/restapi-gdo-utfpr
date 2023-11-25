@@ -1,14 +1,15 @@
 const jsonServer = require('json-server');
 const express = require('express');
-const cors = require('cors'); // Importe o pacote CORS
+const cors = require('cors');
 
 const server = jsonServer.create();
 const corsOptions = {
-  origin: 'http://localhost:4200',
+  origin: ['http://localhost:4200', 'https://borchardttt.github.io'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
 };
+
 
 server.use(cors(corsOptions));
 
