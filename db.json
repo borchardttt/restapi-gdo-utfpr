@@ -18,19 +18,19 @@
     {
       "id": 1,
       "nome": "Financeiro",
-      "orcamento": 0,
+      "orcamento": 50000,
       "orcamento-movimentado": 0
     },
     {
       "id": 2,
       "nome": "Tecnologia da Informação",
-      "orcamento": 0,
+      "orcamento": 100000,
       "orcamento-movimentado": 0
     },
     {
       "id": 3,
       "nome": "Recursos Humanos",
-      "orcamento": 0,
+      "orcamento": 75000,
       "orcamento-movimentado": 0
     }
   ],
