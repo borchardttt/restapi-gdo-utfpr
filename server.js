@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const server = jsonServer.create();
 const corsOptions = {
-  origin: ['http://localhost:4200', 'https://borchardttt.github.io'],
+  origin: ['http://localhost:4200', 'https://borchardttt.github.io/gdo-utfpr'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
