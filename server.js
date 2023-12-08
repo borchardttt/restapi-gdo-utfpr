@@ -2,32 +2,25 @@ const jsonServer = require('json-server');
 const express = require('express');
 const cors = require('cors');
 
-const app = express();
 const server = jsonServer.create();
-const port = process.env.PORT || 8080;
-
-// Configuração CORS
-const allowedOrigins = ['http://localhost:4200', 'https://borchardttt.github.io/gdo-utfpr'];
 const corsOptions = {
-  origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: ['http://localhost:4200', 'https://borchardttt.github.io/gdo-utfpr'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
 };
 
-app.use(cors(corsOptions));
 
-// Aplicar middleware JSON Server
-app.use(jsonServer.defaults());
-app.use(jsonServer.router('db.json'));
+server.use(cors(corsOptions));
 
-// Iniciar o servidor
-app.listen(port, () => {
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
+
+const port = process.env.PORT || 8080;
+
+server.use(middlewares);
+server.use(router);
+
+server.listen(port, () => {
   console.log(`JSON Server is running in ${port}`);
 });
